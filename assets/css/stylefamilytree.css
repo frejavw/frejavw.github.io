@@ -1,0 +1,165 @@
+body {
+  font-family: 'Source Serif Pro', serif;
+}
+
+nav ul {
+    list-style-type: none;
+    padding-inline-start: 0;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+header {
+  width: 100%;
+  height: 30px;
+  padding-top: 10px;
+}
+
+nav {
+    float: right;
+    margin: 0 auto;
+    padding: 0px;
+    margin-right: 35px;
+}
+
+nav li {
+    display: inline-block;
+    margin-left: 30px;
+    line-height: 35px;
+}
+
+nav a {
+  color: #00609c;
+  size: 18px;
+  text-decoration: none;
+}
+
+nav a:hover {
+    color: #55c1e9;
+    cursor: pointer;
+}
+
+h1 {
+  color: #003e52;
+  animation: stageLeft;
+  animation-duration: .5s;
+  animation-fill-mode: forwards;
+  text-align: center;
+  width: 100%;
+  font-weight: 600;
+  font-size: 36px;
+}
+
+h2 {
+  animation: stageRight;
+  animation-duration: .5s;
+  animation-fill-mode: forwards;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  margin-right: auto;
+  margin-left: auto;
+  width: 50%;
+  padding: 2%;
+}
+h3 {
+  text-align: center;
+  font-size: 17px;
+  color: #003e52;
+}
+
+h1 span {
+  animation: jump;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes jump {
+  0% {
+    opacity: 0;
+    } 
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+ul.list1, .list2, .list3, .list4, .list5{
+  list-style-type: none;
+  font-weight: 400;
+  font-size: 15px;
+  text-align: center;
+  padding-bottom: 1.5%;
+}
+
+h2 a {
+  color: #65a9ce;
+}
+
+ul.list1 li, ul.list1 dd, .list2 li, .list3 li, .list4 li, .list5 li {
+  display: inline-block;
+  margin: 1%;
+  padding: 0.75%;
+  align-items: center;
+}
+
+
+@keyframes stageLeft {
+  0% {
+    transform:translateX(40px);
+  }
+}
+
+@keyframes stageRight {
+  0% {
+    transform: translateX(-40px);
+  }
+}
+
+ul.list1 li {
+  border: 2px solid #96d5ea;
+}
+
+ul.list2 li {
+  border: 2px solid #55c1e9;
+}
+
+ul.list3 li {
+  border: 2px solid #00a8e2;
+}
+
+ul.list4 li {
+  border: 2px solid #0075c9;
+}
+
+ul.list5 li {
+  border: 2px solid #00609c;
+}
+img:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.7);
+}
+.pic {
+  text-align: center;
+  width: 100%;
+}
+h4 {
+  width: 50%;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: middle;
+  font-weight: 400;
+  font-size: 18px;
+  padding-bottom: 5%;
+}
+
+
+
+
+
+
+
+
+
+

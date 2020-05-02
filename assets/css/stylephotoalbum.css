@@ -1,0 +1,149 @@
+body {
+  font-family: 'Source Serif Pro', serif;
+}
+
+nav ul {
+    list-style-type: none;
+    padding-inline-start: 0;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+header {
+  width: 100%;
+  height: 30px;
+  padding-top: 10px;
+}
+
+nav {
+    float: right;
+    margin: 0 auto;
+    padding: 0px;
+    margin-right: 35px;
+}
+
+nav li {
+    display: inline-block;
+    margin-left: 30px;
+    line-height: 35px;
+}
+
+nav a {
+ color: #00609c;
+  size: 18px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+nav a:hover {
+    color: #55c1e9;
+}
+h1 {
+  color: #003e52;
+  animation: stageLeft;
+  animation-duration: .5s;
+  animation-fill-mode: forwards;
+  text-align: center;
+  width: 100%;
+  font-weight: 600;
+  font-size: 36px;
+}
+h2 {
+  animation: stageRight;
+  animation-duration: .5s;
+  animation-fill-mode: forwards;
+  font-weight: 400;
+  font-size: 18px;
+  margin-right: auto;
+  margin-left: auto;
+  width: 50%;
+}
+h1 span {
+  animation: jump;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes jump {
+  0% {
+    opacity: 0;
+    } 
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+#pictures .row {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center;
+  padding: 15px;
+}
+#pictures img {
+    width: 250px;
+    margin: 0 15px;
+    transition: 0.3s;
+}
+#pictures img:hover {
+    cursor: pointer;
+    box-shadow: 0 8px 10px 4px rgba(0, 0, 0, 0.9);
+}
+.hidden {
+    display: none;
+}
+#lightbox-overlay {
+    position: absolute;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #e6f5fc; opacity: 0.8;
+    background-size: cover;
+}
+.lightbox {
+    position: absolute;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 450px;
+}
+.lightbox img {
+    width: 100%;
+}
+.lightbox .caption {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 20px;
+    color: #002435;
+    background: white;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+@keyframes stageLeft {
+  0% {
+    transform:translateX(40px);
+  }
+}
+
+@keyframes stageRight {
+  0% {
+    transform: translateX(-40px);
+  }
+}
+/*
+ position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1000px;
+    */
+
+

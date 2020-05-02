@@ -1,0 +1,198 @@
+body {
+  font-family: 'Source Serif Pro', serif;
+  background-color: #e6f5fc;
+}
+
+nav ul {
+    list-style-type: none;
+    padding-inline-start: 0;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+header {
+  width: 100%;
+  height: 30px;
+  padding-top: 10px;
+
+}
+
+nav {
+    display: inline-block;
+    float: right;
+    margin: 0 auto;
+    padding: 0px;
+    margin-right: 35px;
+  }
+
+nav li {
+    display: inline-block;
+    margin-left: 30px;
+    line-height: 35px;
+     
+}
+
+nav a {
+  color: #00609c;
+  size: 18px;
+  text-decoration: none;
+
+}
+
+nav a:hover {
+    color: #55c1e9;
+    cursor: pointer;
+}
+
+h1 {
+  text-align: center;
+  width: 100%;
+  font-weight: 600;
+  font-size: 36px;
+}
+
+h2 {
+  text-align: center;
+  width: 100%;
+  font-size: 30px;
+ color: #65a9ce;
+}
+
+h3 {
+  font-weight: 400;
+  font-size: 14px;
+  margin-right: auto;
+  margin-left: auto;
+  line-height: 20px;
+  width: 50%;
+  padding: 2%;
+  border: 2px solid #74c3ee;
+}
+
+.pic {
+  text-align: center;
+}
+
+#The {
+  color: #00609c;
+  padding-top: 6%;
+  font-size: 80px;
+  margin-left: 13%;
+  opacity: 0;
+  animation: easein;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+#TjeenkWillink {
+  opacity: 0;
+  color: #003e52;
+  font-size: 140px;
+  text-align: center;
+  animation: easein;
+  animation-delay: .7s;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  text-decoration: underline; size: 50%;
+  text-decoration-color: #55c1e9;
+}
+
+#Family {
+  color: #00609c;
+  text-align: right;
+  opacity: 0;
+  margin-right: 13%;
+  font-size: 80px;
+  animation: easein;
+  animation-delay: 1.4s;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+#StartHere {
+  color: #003e52;
+  font-size: 15px;
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-top: 55px;
+  margin-right: 58px;
+  animation: enlarging;
+    animation-duration: 1.5s;
+    animation-delay: 1.4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes enlarging {
+0% {
+  transform: translateY(-10px);
+}
+100% {
+  transform: translateY(10px;)
+}
+}
+
+
+@keyframes easein {
+  0% {
+    opacity: 0;
+  }
+  50%{
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+h1 span {
+  animation: jump;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes jump {
+  0% {
+    opacity: 0;
+    } 
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+h1 {
+  animation: stageLeft;
+  animation-duration: .5s;
+  animation-fill-mode: forwards;
+}
+
+h2 {
+  animation: stageRight;
+  animation-duration: .5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes stageLeft {
+  0% {
+    transform:translateX(40px);
+  }
+}
+
+@keyframes stageRight {
+  0% {
+    transform: translateX(-40px);
+  }
+}
+
+
+
+
+
+
+
+
